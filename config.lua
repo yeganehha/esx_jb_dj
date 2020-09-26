@@ -1,12 +1,38 @@
 Config = {}
 
+Config.HearDistance = 50.0
+Config.MaxVolume =  3 / 4
+
+
+Config.MarketDraw = 30.0
+Config.MarketType = 10
+Config.HelpPrompt = "Appuyer sur ~INPUT_PICKUP~ pour prendre votre place de dj"
+Config.Marker = { w= 1.0, h= 1.0,l = 1.0 ,r = 204, g = 204, b = 0 , Rotate = true }
+
+
+Config.jobCanPlaye                = {'bahama','goverment','casino' }
+Config.openDJMenuButton           = 38 -- E
+Config.openDJMenuCommend          = 'dj'
+
+Config.Vehicles = {
+	models = {
+		{label = 'festival bus', model = 'pbus2' , price = 10},
+	},
+	Spawner = {x = 934.23254394531, y = 68.195655822754, z = 79.193206787109},
+	InsideShop = {x = 955.45153808594, y = 155.03648376465, z = 80.830619812012},
+	Marker = { type = 36, x = 1.0, y = 1.0, z = 1.0, r = 255, g = 0, b = 0, rotate = true },
+	SpawnPoints = {
+		{ coords = { x = 930.67114257813, y = 82.665519714355, z = 73.825233459473 }, heading = 16.22, radius = 4.0 },
+	}
+}
+
 Config.nightclubs = {
 	-- nightclubBahamas = {
 		-- dancefloor = {
 			-- Pos = {x = -1387.0628662109, y=  -618.31188964844, z = 30.81955909729},
 			-- Marker = { w= 25.0, h= 1.0,r = 204, g = 204, b = 0},
 			-- HelpPrompt = "Appuyer sur ~INPUT_PICKUP~ pour afficher le menu de danse",
-		-- }, 
+		-- },
 		-- djbooth = {
 			-- Pos = {x = -1384.628662109, y=  -627.31188964844, z = 30.81955909729}, 
 			-- Marker = { w= 1.0, h= 0.5,r = 204, g = 204, b = 0},
@@ -27,45 +53,17 @@ Config.nightclubs = {
 	-- },	
 	nightclubunderground = {
 		dancefloor = {
-			Pos = {x = -1592.275, y=  -3012.131, z = -78.00},
-			Marker = { w= 25.0, h= 1.0,r = 204, g = 204, b = 0},
-			HelpPrompt = "Appuyer sur ~INPUT_PICKUP~ pour afficher le menu de danse",
+			x = -1592.275, y=  -3012.131, z = -78.00 , HearDistance = 20.0
 		}, 
 		djbooth = {
-			Pos = {x = -1603.98, y=  -3012.802, z = -77.79}, 
-			Marker = { w= 1.0, h= 0.5,r = 204, g = 204, b = 0},
-			HelpPrompt = "Appuyer sur ~INPUT_PICKUP~ pour prendre votre place de dj",
+			x = -1603.98, y=  -3012.802, z = -77.79
 		},
 	},
 }
 
 Config.Songs = {
-	-- SONGS = Youtube Video ID Ex.: www.youtube.com/watch?v=((jfreFPe99GU)) catch only jfreFPe99GU
-	-- SONGS = ID do video  do Youtube Exemplo: www.youtube.com/watch?v=((jfreFPe99GU)) pegue apenas jfreFPe99GU
 
-	{song = "PW9zPJw3jlk", label ="almana song"},
-	{song = "6scxiuiftKY", label ="blades soundtrack original"},
-	{song = "qX97FGBwDog", label ="vampire dance club remix"},
-	{song = "BPHtlfigvpM", label ="Robert Miles"},
-	{song = "z0I-o8kDJDY", label ="Armin van Buuren vs Shapov"},
-	{song = "iuJDhFRDx9M", label ="fast and furious tokyo drift"},
-	{song = "t-yCg-0-baE", label ="grits - my life be like"},
-	{song = "K9xp-j83U5w", label ="tokyo drift musique du debut"},
-	{song = "TUdcIF00ekg", label ="IAM - L'empire du côté obscu"},
-	{song = "NonWfgHegDU", label ="IAM - Petit frère"},
-	{song = "1MI6ADAb-ms", label ="Sniper - Brule"},
-	{song = "tAGnKpE4NCI", label ="Metallica - Nothing Else Matters"},
-	{song = "58nEqHMB7nI", label ="Evanescence-Bring Me To Life"},
-	{song = "WLE7hcSgxlM", label ="Metallica - Fade To Black"},
-	{song = "Ckom3gf57Yw", label ="Metallica - The Unforgiven"},
-	{song = "LiSXi4vcKBM", label ="Radiohead-Creep"},
-	{song = "SvaktNJ3-MM", label ="Depeche Mode vs Marilyn Manson"},
-	{song = "EwfnND6pHCc", label ="Bon Jovi - It's my life"},
-	{song = "l482T0yNkeo", label ="AC/DC - Highway to Hell"},
-	{song = "mhTRhAX_QBA", label ="Queen - We Will Rock You"},
-	{song = "5IpYOF4Hi6Q", label ="pink floyd - another brick in the wall"},
-	{song = "qeMFqkcPYcg", label ="Eurythmics - Sweet Dreams"},
-	{song = "UprcpdwuwCg", label ="twenty one pilots: Heathens"},
-	{song = "zUwEIt9ez7M", label ="Deep Purple - Smoke on the Water"},
+	{song = "http://dl1.samfuni.com/download.php?file=2020/00036/Barobax_Soosan_Khanoom%5B128%5D.mp3", label ="soosan khanoom"},
+
 	
 }
